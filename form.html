@@ -14,17 +14,15 @@
     </header>
     
     <main>
-        <h1>Please leave Your feedback here</h1>
-        <p>
-            And if You know some more interesting information about cats, please share it with me.
-        </p>
-        <form method="POST" action="https://formspree.io/victoriasemchuk@gmail.com">
-            <label for="client-name">Name: </label>
-            <input id="client-name" type="text" placeholder="Name" 
-              name="client-name" required>
+        <h1>Little polling about pets</h1>
+        <form method="POST" action="https://formspree.io/victoriasemchuk@gmail.com" enctype="multipart/form-data">
+            <label>
+                Your name: <input type="text" placeholder="Name"
+                  name="client-name" required>
+            </label>
             <br>
             <label>
-                Email: <input type="email" placeholder="Email"
+                Your email: <input type="email" placeholder="Email"
                   name="client-email" required>
             </label>
             <br>
@@ -39,15 +37,23 @@
                 <input type="radio" name="gender" value="oth"> Other 
             </label>
             <br>
-                <label>
-                    Your rating: 
-                    <input type="number" placeholder="1 to 5" name="rating"> 
-                </label>
+            <label>
+                How many pets do you have? 
+                <input type="number" placeholder="number of pets" name="pet-num"> 
+            </label>
             <br>
             <label>
-                Message: <input type="message" placeholder="Type your text here"
+                What is(are) its name(s)? <input type="text" placeholder="Your pets' names"
+                  name="pet-name" required>
+            </label>
+            <br>
+            <label>
+                Tell me a little about your pet(s): <input type="text" placeholder="Type your text here"
                   name="client-message" required>
             </label>
+            <br>
+            Uploud image of your pet(s):
+            <input type="file" name="pic" accept="image/*">
             <br>
             <input type="submit">
         </form>
