@@ -14,11 +14,15 @@
     </header>
     
     <main>
-        <h1>Client Info</h1>
+        <h1>Please leave Your feedback here</h1>
+        <p>
+            And if You know some more interesting information about cats, please share it with me.
+        </p>
         <form method="POST" action="https://formspree.io/victoriasemchuk@gmail.com">
             <label for="client-name">Name: </label>
             <input id="client-name" type="text" placeholder="Name" 
               name="client-name" required>
+            <br>
             <label>
                 Email: <input type="email" placeholder="Email"
                   name="client-email" required>
@@ -33,6 +37,16 @@
             </label>
             <label>
                 <input type="radio" name="gender"> Other 
+            </label>
+            <br>
+                <label>
+                    Your rating: 
+                    <input type="number" placeholder="1 to 5" name="rating"> 
+                </label>
+            <br>
+            <label>
+                Message: <input type="message" placeholder="Type your text here"
+                  name="client-message" required>
             </label>
             <br>
             <input type="submit">
